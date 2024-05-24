@@ -9,10 +9,15 @@ import SwiftUI
 
 struct afterLogin: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+            Text("Welcome to the Next Page!")
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(Color.blue)
+                .foregroundColor(.white)
+                .font(.title)
+                .navigationBarTitle("Next Page", displayMode: .inline)
+        }
 }
 
-#Preview {
-    afterLogin()
-}
+//#Preview {
+//    afterLogin()
+//}

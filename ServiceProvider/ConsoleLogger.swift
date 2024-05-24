@@ -1,8 +1,12 @@
-//
-//  ConsoleLogger.swift
-//  ServiceProvider
-//
-//  Created by Jonathan Kandel on 23/05/2024.
-//
-
 import Foundation
+import iArnaconSDK
+
+class ConsoleLogger: PLogger {
+    func debug(value: String) {
+        print("DEBUG: \(value)")
+    }
+
+    func error(_ error: String, exception: Error) {
+        print("ERROR: \(error): \(exception.localizedDescription)")
+    }
+}
